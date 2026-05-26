@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: zou-ai-code-mother-backend
+  # mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yu_ai_code_mother
+    #本地是zoujian081@
+    username: root
+    password: zoujian081@
+    #服务器是zoujian081
+  #redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+      password:
+      ttl: 1800
+  #session配置
+  session:
+    store-type: redis
+    #session 30天过期
+    timeout: 2592000
+  profiles:
+    active: local
+    
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+# springdoc-openapi
+springdoc:
+  group-configs:
+    - group: 'default'
+      packages-to-scan: com.zou.zouaicodemother.controller
+# knife4j
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
