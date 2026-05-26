@@ -1,16 +1,13 @@
 package com.zou.zouaicodemother.core.saver;
 
 import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
 import com.zou.zouaicodemother.constant.AppConstant;
 import com.zou.zouaicodemother.exception.BusinessException;
 import com.zou.zouaicodemother.exception.ErrorCode;
 import com.zou.zouaicodemother.model.enums.CodeGenTypeEnum;
 
-import javax.net.ssl.SSLSession;
 import java.io.File;
-import java.io.PipedReader;
 import java.nio.charset.StandardCharsets;
 
 /**
